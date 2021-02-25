@@ -53,4 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    dropdown = document.getElementById('breed-dropdown')
+    dropdown.addEventListener('change', e => {
+        // console.log(e.target.value)
+        filterResults(e.target.value)
+    })
+
+    function filterResults(letter) {
+        breeds.reset()
+        // get the keys, if the key[0] == letter, then renderBreeds(key)
+    }
+
 })  
